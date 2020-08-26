@@ -22,15 +22,10 @@ filetype on
 filetype indent on
 filetype plugin on
 filetype plugin indent on
-" set the runtime path to include Vundle and initialize
-" set rtp+=~/.vim/bundle/Vundle.vim
+" ==== vim-plug ====
 call plug#begin('~/.vim/plugged')
-" call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle, required
-" Plugin 'VundleVim/Vundle.vim'
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -44,13 +39,10 @@ Plug 'junegunn/goyo.vim'
 Plug 'davidhalter/jedi-vim'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'Yggdroot/indentLine'
+
+
+
 call plug#end()
-" distraction free writing mode
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-" call vundle#end()            " required
-" filetype plugin indent on    " required
 
 map ff :NERDTreeToggle<CR>
 
