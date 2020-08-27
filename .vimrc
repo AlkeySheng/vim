@@ -104,9 +104,10 @@ map L :UndotreeToggle<CR>
 noremap <LEADER>gy :Goyo<CR>
 
 let g:airline_theme='atomic'
-nnoremap W 5k
-nnoremap E 5j
-
+nnoremap K 5k
+nnoremap J 5j
+map Q :q!<CR>
+map S :w<CR>
 map <C-l> :set splitright<CR>:vsplit<CR>
 map <C-h> :set nosplitright<CR>:vsplit<CR>
 map <C-k> :set nosplitbelow<CR>:split<CR>
